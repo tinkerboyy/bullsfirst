@@ -9,7 +9,8 @@ button {
   border: 1px solid darkred;
   box-shadow: 1px 1px 3px #333;
   margin-right: 10px;
-  width: 100px; }
+  width: 100px;
+  color: #ffffff; }
 
 table {
   width: 100%; }
@@ -44,7 +45,8 @@ img {
   justify-content: flex-end; }
 
 #header .actions button {
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #FF5200; }
 
 #content {
   display: -ms-flexbox;
@@ -94,6 +96,3 @@ table th {
 
 .right-section .help-label {
   padding: 10px; }
-
-#content button {
-  cursor: pointer; }

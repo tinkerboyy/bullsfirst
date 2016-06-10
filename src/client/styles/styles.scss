@@ -1,4 +1,5 @@
 $color-orange: #FFA500;
+$color-text-white: #ffffff;
 
 body {
   font-family: "Helvetica Neue", "Arial", "sans-serif";
@@ -13,6 +14,7 @@ button {
   box-shadow: 1px 1px 3px #333;
   margin-right: 10px;
   width: 100px;
+  color: $color-text-white;
 }
 
 table {
@@ -50,6 +52,7 @@ img {
 }
 #header .actions button {
   cursor: pointer;
+  background-color: #FF5200;
 }
 
 #content {
@@ -103,7 +106,5 @@ table th {
 }
 
 #content {
-  button {
-    cursor: pointer;
-  }
+
 }
