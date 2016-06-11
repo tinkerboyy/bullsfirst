@@ -5,6 +5,7 @@
         'ngAnimate',
         'ngSanitize',
         'ui.router',
-        'ngplus'
+        'ngplus',
+        'nvd3'
     ]);
 })();

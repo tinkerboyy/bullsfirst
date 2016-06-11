@@ -13,12 +13,13 @@
         <table class="table">
             <tr>
                 <th>Name</th>
-                <th>Market Value</th>
+                <th ng-click="vm.sortReverse = !vm.sortReverse"><i class="fa fa-sort-desc" aria-hidden="true"></i>
+                    Market Value</th>
                 <th>Cash</th>
                 <th>Legend</th>
             </tr>
 
-            <tr ng-repeat="row in vm.rows track by $index">
+            <tr ng-repeat="row in vm.rows | orderBy: vm.sortType:vm.sortReverse">
                 <td>{{ row.name }}</td>
                 <td>{{ row.marketValue | currency }}</td>
                 <td>{{ row.cash | currency }}</td>
@@ -44,6 +45,19 @@
 
     <div class="right-section">
         <img class="chart" ng-src="src/client/images/Chart.png" alt="Chart.png">
+        <!--<nvd3-pie-chart-->
+                <!--id="exampleId"-->
+                <!--data="vm.rows"-->
+                <!--x="vm.xFunction()"-->
+                <!--y="vm.yFunction()"-->
+                <!--width="{{ vm.width }}"-->
+                <!--height="{{ vm.height }}"-->
+                <!--showLabels="true"-->
+                <!--pieLabelsOutside="false"-->
+                <!--showValues="true"-->
+                <!--labelType="percent">-->
+            <!--<svg></svg>-->
+        <!--</nvd3-pie-chart>-->
 
         <div class="help-label">Click on an account to view positions</div>
     </div>

@@ -10,6 +10,10 @@
     function Accounts($state, accountsService, $timeout) {
         var vm = this;
         vm.rows = [];
+        vm.width = 500;
+        vm.height = 300;
+        vm.sortType = '-marketValue';
+        vm.sortReverse = false;
 
         vm.addAccount = addAccount;
         vm.refresh = refreshPage;
