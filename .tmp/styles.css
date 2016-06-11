@@ -34,7 +34,8 @@ img {
   margin: 3px 0; }
 
 #header .logo .subtitle {
-  font-size: 0.8rem; }
+  font-size: 1.6rem;
+  font-style: italic; }
 
 #header .actions {
   display: -ms-flexbox;
